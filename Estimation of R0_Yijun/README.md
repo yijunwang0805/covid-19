@@ -3,7 +3,7 @@
 #### Author: Yijun Wang
 #### Date: 2020-02-09
 
-### Usage:
+### Usage
 - Download my Jupyter notebook file: [Estimation of R0.ipynb](https://github.com/yijunwang0805/YijunWang/blob/master/Estimation%20of%20R0_Yijun/Estimation%20of%20R0.ipynb)
 
 ### Background
@@ -14,8 +14,8 @@
 - Tracing R<sub>0</sub> for nCoV throughout time will provide a glance of the change in R<sub>0</sub>, giving clues of the effect of social and non-pharmaceutical prevention.
 
 ### Fact
-- On 2019-12-01, the first case of nCoV exhibits symptons, according to lacent ?
-- On 2020-1-23, Wuhan city lockdowns. Before Wuhan lockdown, 5 million people leave the city
+- On 2019-12-01, the first case of nCoV exhibits symptons, according to [Huang's Clinical features of patients infected with 2019 novel coronavirus in Wuhan, China](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30183-5/fulltext#seccestitle10)
+- On 2020-1-23, Wuhan city lockdowns [ifeng news](http://news.ifeng.com/c/7tpL47zV2Vy). Before Wuhan lockdown, 5 million people leave the city [Tencent News](https://new.qq.com/sv1/qd/aoyou.html?cmsid=20200127A0EFXJ00)
 - There is a time lag between onset of symptons and case confirmed, particularly due to staff and medical supply shortage
 
 ### Conclusion
