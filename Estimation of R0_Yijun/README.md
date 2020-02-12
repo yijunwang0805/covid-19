@@ -6,21 +6,9 @@
 ### Usage
 - Download my Jupyter notebook file: [Estimation of R0.ipynb](https://github.com/yijunwang0805/YijunWang/blob/master/Estimation%20of%20R0_Yijun/Estimation%20of%20R0.ipynb)
 
-### Background
-- R<sub>0</sub> is known as basic reproduction number. It can be understood as the expected number of cases infected by one case in a population where all individuals are susceptible to infection. If R<sub>0</sub> < 1, an epidemic will not start. If R<sub>0</sub> > 1, an epidemic will be able to start spreading out. If R<sub>0</sub> = 1, an epidemic will become an endemic.
-
-- The basic reproduction number R<sub>0</sub> has important implication. The greater the R<sub>0</sub>, the harder to control an epidemic. R<sub>0</sub> for SARS and Ebola virus is 0.49 and 1.51, respectively (Gerardo 2004; Althaus, 2014). 
-
-- Tracing R<sub>0</sub> for nCoV throughout time will provide a glance of the change in R<sub>0</sub>, giving clues of the effect of social and non-pharmaceutical prevention.
-
-### Fact
-- On 2019-12-01, the first case of nCoV exhibits symptons, according to [Huang's Clinical features of patients infected with 2019 novel coronavirus in Wuhan, China](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30183-5/fulltext#seccestitle10)
-- On 2020-1-23, Wuhan city lockdowns [ifeng news](http://news.ifeng.com/c/7tpL47zV2Vy). Before Wuhan lockdown, 5 million people leave the city [Tencent News](https://new.qq.com/sv1/qd/aoyou.html?cmsid=20200127A0EFXJ00)
-- There is a time lag between onset of symptons and case confirmed, particularly due to staff and medical supply shortage
-
 ### Conclusion
 - R<sub>0</sub> exhibits a sharp upward trend from 2020-01-24 to 2020-01-29, rising from 2.24 to 2.51. Since the Wuhan city runs out of medical supply to confirm nCoV cases, the rise of R<sub>0</sub> could be the consequence of outflow of Wuhan residents before lockdown, who seek for medical assistance outside of the Wuhan city and eventually confirmed by the official
-- Then, R<sub>0</sub> value fluctuates at 2.50 from 2020-01-30 to 2020-02-03, reaching its peak at 2.51 on 2020-02-03. Time lag between onset of symptons and case confirm is estimated to be 7 to 10 days. The halt of rising trend could be inferred as the consequence of official and social appeal of 'stay at home for 14 days' by Zhong Nanshan since the Wuhan lockdown 2020-01-23 on ?. In addition, the fluctuation could be attributed by the inner family infection due to in-house quarantine, where family member infects one and another. 
+- Then, R<sub>0</sub> value fluctuates at 2.50 from 2020-01-30 to 2020-02-03, reaching its peak at 2.51 on 2020-02-03. Time lag between onset of symptons and case confirm is estimated to be 7 to 10 days. The halt of rising trend could be inferred as the consequence of official and social appeal of 'staying at home'. In addition, the fluctuation could be attributed by the inner family infection due to in-house quarantine, where family member infects one and another. 
 - Thereafter, R<sub>0</sub> is trending downward, dropping to 2.39 on 2020-02-12. This can be viewed as the positive effect of social and non-pharmeceutical intervention (stay at home and wear facial mask)
 - Sensitivity analysis shows that the value of R<sub>0</sub> is highly influenced by the value of T<sub>g</sub>. As more cases being collected, the measure of T<sub>g</sub> will become more accurate
 
@@ -44,8 +32,19 @@ Parameter values
 ### Parameters
 - T<sub>L</sub> is the generation period, which is assumed to be 7.5, taken from reference 1 and 2
 - p is the ratio of susceptible (49) turning into confirmed case (59), which is taken to be 0.695, numbers from [People's Daily Weibo](https://m.weibo.cn/u/2803301701)
+- Median incubation period is assumed to be 3 days, according to Guan's [Clinical characteristics of 2019 novel coronavirus infection in China](https://www.medrxiv.org/content/10.1101/2020.02.06.20020974v1) (2020)
+- rho is the ratio of incubation period over generation period, which is assumed to be 0.4 in the baseline scenario
 - R<sub>0</sub> estimation formula refers to reference 3. Mathematical proof is shown in the model section below
-- Median incubation period is 3 days (Zhong, 2020) ?
+
+### Background
+- R<sub>0</sub> is known as basic reproduction number. It can be understood as the expected number of cases infected by one case in a population where all individuals are susceptible to infection. If R<sub>0</sub> < 1, an epidemic will not start. If R<sub>0</sub> > 1, an epidemic will be able to start spreading out. If R<sub>0</sub> = 1, an epidemic will become an endemic.
+- The basic reproduction number R<sub>0</sub> has important implication. The greater the R<sub>0</sub>, the harder to control an epidemic. R<sub>0</sub> for SARS and Ebola virus is 0.49 and 1.51, respectively (Gerardo 2004; Althaus, 2014). 
+- Tracing R<sub>0</sub> for nCoV throughout time will provide a glance of the change in R<sub>0</sub>, giving clues of the effect of social and non-pharmaceutical prevention.
+
+### Fact
+- On 2019-12-01, the first case of nCoV exhibits symptons, according to [Huang's Clinical features of patients infected with 2019 novel coronavirus in Wuhan, China](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30183-5/fulltext#seccestitle10). This date is used as the first day of the epidemic.
+- On 2020-1-23, Wuhan city lockdowns [(ifeng news)](http://news.ifeng.com/c/7tpL47zV2Vy). Before Wuhan lockdown, 5 million people leave the city [(Tencent News)](https://new.qq.com/sv1/qd/aoyou.html?cmsid=20200127A0EFXJ00)
+- There is a time lag between onset of symptons and case confirmed, particularly due to staff and medical supply shortage
 
 ### Assumption
 - This model assume that infected individuals were not infectious during the incubation period (Zhou, 2020).
