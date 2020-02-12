@@ -19,11 +19,27 @@
 - There is a time lag between onset of symptons and case confirmed, particularly due to staff and medical supply shortage
 
 ### Conclusion
-- R<sub>0</sub> exhibits a sharp upward trend from 2020-01-24 to 2020-01-29, rising from 2.24 to 2.51. Since the Wuhan city runs out of medical supply to confirm nCoV cases, the rise of R<sub>0</sub> could be the consequence of outflow of Wuhan residents before lockdown, who seek for medical assistance outside of the Wuhan city and eventually confirmed by the official.
-- Then, R<sub>0</sub> value fluctuates at 2.50 from 2020-01-30 to 2020-02-03, reaching its peak at 2.51 on 2020-02-03. Time lag between onset of symptons and case confirm is estimated to be 7 to 10 days. The halt of rising trend could be inferred as the consequence of official and social appeal of 'stay at home for 14 days' by Zhong Nanshan since the Wuhan lockdown 2020-01-23 on ?. In addition, the fluctuation could be attributed by the inner family contagion due to in-house quarantine, where family member infects one and another. 
-- Thereafter, R<sub>0</sub> is trending downward, dropping to 2.39 on 2020-02-12.
+- R<sub>0</sub> exhibits a sharp upward trend from 2020-01-24 to 2020-01-29, rising from 2.24 to 2.51. Since the Wuhan city runs out of medical supply to confirm nCoV cases, the rise of R<sub>0</sub> could be the consequence of outflow of Wuhan residents before lockdown, who seek for medical assistance outside of the Wuhan city and eventually confirmed by the official
+- Then, R<sub>0</sub> value fluctuates at 2.50 from 2020-01-30 to 2020-02-03, reaching its peak at 2.51 on 2020-02-03. Time lag between onset of symptons and case confirm is estimated to be 7 to 10 days. The halt of rising trend could be inferred as the consequence of official and social appeal of 'stay at home for 14 days' by Zhong Nanshan since the Wuhan lockdown 2020-01-23 on ?. In addition, the fluctuation could be attributed by the inner family infection due to in-house quarantine, where family member infects one and another. 
+- Thereafter, R<sub>0</sub> is trending downward, dropping to 2.39 on 2020-02-12. This can be viewed as the positive effect of social and non-pharmeceutical intervention (stay at home and wear facial mask)
+- Sensitivity analysis shows that the value of R<sub>0</sub> is highly influenced by the value of T<sub>g</sub>. As more cases being collected, the measure of T<sub>g</sub> will become more accurate
 
 ### Sensitivity Analysis
+Parameter values
+| p | rho | T<sub>g</sub> | Y(t) | R<sub>0</sub> |
+| --- | --- | --- | --- | --- |
+| 0.695 | 0.4 | 7.5 | 59826 | 2.44 |
+| 0.695 | 0.65 | 7.5 | 59826 | 2.42 |
+| 0.695 | 0.9 | 7.5 | 59826 | 2.24 |
+| 0.695 | 0.4 | 10 | 59826 | 3.05 |
+| 0.695 | 0.65 | 10 | 59826 | 3.02 |
+| 0.695 | 0.9 | 10 | 59826 | 2.71 |
+| 0.8 | 0.4 | 7.5 | 62102 | 2.44 |
+| 0.8 | 0.65 | 7.5 | 62102 | 2.42 |
+| 0.8 | 0.9 | 7.5 | 62102 | 2.25 |
+| 0.8 | 0.4 | 10 | 62102 | 3.06 |
+| 0.8 | 0.65 | 10 | 62102 | 3.03 |
+| 0.8 | 0.9 | 10 | 62102 | 2.72 |
 
 ### Parameters
 - T<sub>L</sub> is the generation period, which is assumed to be 7.5, taken from reference 1 and 2
@@ -32,11 +48,7 @@
 - Median incubation period is 3 days (Zhong, 2020) ?
 
 ### Assumption
-- Assume the value of p is the true value of population parameter p
-
-### Limitation
-- The model assumes parameter values are the true values of parameters
-- 
+- This model assume that infected individuals were not infectious during the incubation period (Zhou, 2020).
 
 ### Model
 A typical **SEIR** (susceptible, exposed, infectious, removed) model can be described as a system of differential equations
