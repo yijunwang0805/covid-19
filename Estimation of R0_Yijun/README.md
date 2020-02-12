@@ -1,4 +1,4 @@
-# Estimation of R0
+# Estimation of R<sub>0</sub>
 
 #### Author: Yijun Wang
 #### Date: 2020-02-09
@@ -7,20 +7,60 @@
 - Download my Jupyter notebook file: [Estimation of R0.ipynb](https://github.com/yijunwang0805/YijunWang/blob/master/Estimation%20of%20R0_Yijun/Estimation%20of%20R0.ipynb)
 
 ### Background
-> 1. R0 is known as basic reproduction number. It can be understood as the expected number of cases infected by one case in a population where all individuals are susceptible to infection. If R0 < 1, an epidemic will not start. If R0 > 1, an epidemic will be able to start spreading out. If R0 = 1, an epidemic will become an endemic.
+> 1. R<sub>0</sub> is known as basic reproduction number. It can be understood as the expected number of cases infected by one case in a population where all individuals are susceptible to infection. If R<sub>0</sub> < 1, an epidemic will not start. If R<sub>0</sub> > 1, an epidemic will be able to start spreading out. If R<sub>0</sub> = 1, an epidemic will become an endemic.
 > 2. Generation period, or known as serial interval, is assumed to be 7.5, taken from reference 1 and 2
-> 3. P value is 0.695, taken from [People's Daily Weibo](https://m.weibo.cn/u/2803301701)
-> 4. R0 estimation formula refers to reference 3. I will upload a proof of formula in a couple of days.
+> 3. P value is ratio of susceptible (49) turning into confirmed case (59), numbers from [People's Daily Weibo](https://m.weibo.cn/u/2803301701)
+> 4. R<sub>0</sub> estimation formula refers to reference 3, mathematical proof is shown in the model section.
 
-The basic reproduction number R0 has important implication. The greater the R0, the harder to control an epidemic. R0 for SARS and Ebola virus is 0.49 and 1.51, respectively (Gerardo 2004; Althaus, 2014). 
+The basic reproduction number R<sub>0</sub> has important implication. The greater the R<sub>0</sub>, the harder to control an epidemic. R<sub>0</sub> for SARS and Ebola virus is 0.49 and 1.51, respectively (Gerardo 2004; Althaus, 2014). 
 
-Tracing R0 for nCoV throughout time will provide a glance of the change in R0, giving clues of the effect of social and non-pharmaceutical prevention.
+Tracing R<sub>0</sub> for nCoV throughout time will provide a glance of the change in R<sub>0</sub>, giving clues of the effect of social and non-pharmaceutical prevention.
 
-### Mathematical Proof
-<a href="https://www.codecogs.com/eqnedit.php?latex=R_0&space;=&space;(1&plus;\frac{\lambda}{\alpha})(1&plus;\frac{\lambda}{\gamma})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?R_0&space;=&space;(1&plus;\frac{\lambda}{\alpha})(1&plus;\frac{\lambda}{\gamma})" title="R_0 = (1+\frac{\lambda}{\alpha})(1+\frac{\lambda}{\gamma})" /></a>
+### Model
+A typical SEIR model can be described as a system of differential equations
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\small&space;\frac{dS}{dt}&space;=&space;-\beta&space;\frac{S(t)I(t)}{N}&space;\newline&space;\frac{dE}{dt}&space;=&space;\beta&space;\frac{S(t)I(t)}{N}&space;-&space;\alpha&space;E(t)&space;\newline&space;\frac{dI}{dt}&space;=&space;\alpha&space;E(t)&space;-&space;\gamma&space;I(t)&space;\newline&space;\frac{dR(t)}{dt}&space;=&space;\gamma&space;I(t)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\small&space;\frac{dS}{dt}&space;=&space;-\beta&space;\frac{S(t)I(t)}{N}&space;\newline&space;\frac{dE}{dt}&space;=&space;\beta&space;\frac{S(t)I(t)}{N}&space;-&space;\alpha&space;E(t)&space;\newline&space;\frac{dI}{dt}&space;=&space;\alpha&space;E(t)&space;-&space;\gamma&space;I(t)&space;\newline&space;\frac{dR(t)}{dt}&space;=&space;\gamma&space;I(t)" title="\small \frac{dS}{dt} = -\beta \frac{S(t)I(t)}{N} \newline \frac{dE}{dt} = \beta \frac{S(t)I(t)}{N} - \alpha E(t) \newline \frac{dI}{dt} = \alpha E(t) - \gamma I(t) \newline \frac{dR(t)}{dt} = \gamma I(t)" /></a>
+
+where
+
+S(t) is the number of susceptible at time t
+
+E(t) is the number of exposed at time t
+
+I(t) is the number of infectious at time t
+
+R(t) is the number of removed, which includes the number of recovered and dead at time t
+
+N(t) is the population at time t
+
+N(t) = S(t) + E(t) + I(t) + R(t)
+
+At the beginning, the ratio of infectious to population is almost negligible.
+
+Therefore,
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\small&space;t&space;\to&space;0,&space;S(0)&space;\to&space;N(0)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\small&space;t&space;\to&space;0,&space;S(0)&space;\to&space;N(0)" title="\small t \to 0, S(0) \to N(0)" /></a>
+
+Given that 
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\small&space;T_L&space;=&space;\frac{1}{\alpha}&space;\newline&space;T_I&space;=&space;\frac{1}{\gamma}&space;\newline&space;T_G&space;=&space;T_L&space;&plus;&space;T_I" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\small&space;T_L&space;=&space;\frac{1}{\alpha}&space;\newline&space;T_I&space;=&space;\frac{1}{\gamma}&space;\newline&space;T_G&space;=&space;T_L&space;&plus;&space;T_I" title="\small T_L = \frac{1}{\alpha} \newline T_I = \frac{1}{\gamma} \newline T_G = T_L + T_I" /></a>
+
+where
+
+T<sub>L</sub> is the time of latent period
+
+T<sub>I</sub> is the time of infectious period
+
+T<sub>G</sub> is the time of generation period, which is also known as the serial interval
+
+R<sub>0</sub> can be expressed as
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=R_0&space;=&space;(1&plus;\frac{\lambda}{\alpha})(1&plus;\frac{\lambda}{\gamma})&space;\newline&space;R_0&space;=&space;(1&plus;\lambda&space;T_L)(1&plus;\lambda&space;T_I)&space;\newline&space;R_0&space;=&space;1&space;&plus;&space;\lambda&space;T_I&space;&plus;&space;\lambda&space;T_L&space;&plus;&space;\lambda^2&space;T_I&space;T_L&space;\newline&space;R_0&space;=&space;1&space;&plus;&space;\lambda&space;(T_I&space;&plus;&space;T_L)&space;&plus;&space;\lambda^2&space;T_I&space;T_G&space;\frac{T_L}{T_G}&space;\newline&space;R_0&space;=&space;1&space;&plus;&space;\lambda&space;T_G&space;&plus;&space;\lambda^2&space;T_I&space;T_G&space;\rho&space;\newline&space;R_0&space;=&space;1&space;&plus;&space;\lambda&space;T_G&space;&plus;&space;\lambda^2&space;\rho(T_G-T_L)T_G&space;\newline&space;R_0&space;=&space;1&space;&plus;&space;\lambda&space;T_G&space;&plus;&space;\lambda^2&space;\rho&space;T_G^2&space;-&space;\lambda^2\rho&space;T_G&space;T_L&space;\newline&space;R_0&space;=&space;1&space;&plus;&space;\lambda&space;T_G&space;&plus;&space;\lambda^2&space;\rho&space;T_G^2&space;-&space;\lambda^2\rho&space;T_G&space;\frac{T_L}{T_G}T_G&space;\newline&space;R_0&space;=&space;1&space;&plus;&space;\lambda&space;T_G&space;&plus;&space;\lambda^2&space;\rho&space;T_G^2&space;-&space;\lambda^2\rho&space;T_G&space;\rho&space;T_G&space;\newline&space;R_0&space;=&space;1&space;&plus;&space;\lambda&space;T_G&space;&plus;&space;\lambda^2&space;\rho&space;T_G^2&space;-&space;\lambda^2&space;\rho^2&space;T_G^2&space;\newline&space;R_0&space;=&space;1&space;&plus;&space;\lambda&space;T_G&space;&plus;&space;(\lambda&space;T_G)^2&space;(\rho&space;-&space;\rho^2)&space;\newline&space;R_0&space;=&space;1&space;&plus;&space;\lambda&space;T_G&space;&plus;&space;\rho(1&space;-&space;\rho)&space;(\lambda&space;T_G)^2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?R_0&space;=&space;(1&plus;\frac{\lambda}{\alpha})(1&plus;\frac{\lambda}{\gamma})&space;\newline&space;R_0&space;=&space;(1&plus;\lambda&space;T_L)(1&plus;\lambda&space;T_I)&space;\newline&space;R_0&space;=&space;1&space;&plus;&space;\lambda&space;T_I&space;&plus;&space;\lambda&space;T_L&space;&plus;&space;\lambda^2&space;T_I&space;T_L&space;\newline&space;R_0&space;=&space;1&space;&plus;&space;\lambda&space;(T_I&space;&plus;&space;T_L)&space;&plus;&space;\lambda^2&space;T_I&space;T_G&space;\frac{T_L}{T_G}&space;\newline&space;R_0&space;=&space;1&space;&plus;&space;\lambda&space;T_G&space;&plus;&space;\lambda^2&space;T_I&space;T_G&space;\rho&space;\newline&space;R_0&space;=&space;1&space;&plus;&space;\lambda&space;T_G&space;&plus;&space;\lambda^2&space;\rho(T_G-T_L)T_G&space;\newline&space;R_0&space;=&space;1&space;&plus;&space;\lambda&space;T_G&space;&plus;&space;\lambda^2&space;\rho&space;T_G^2&space;-&space;\lambda^2\rho&space;T_G&space;T_L&space;\newline&space;R_0&space;=&space;1&space;&plus;&space;\lambda&space;T_G&space;&plus;&space;\lambda^2&space;\rho&space;T_G^2&space;-&space;\lambda^2\rho&space;T_G&space;\frac{T_L}{T_G}T_G&space;\newline&space;R_0&space;=&space;1&space;&plus;&space;\lambda&space;T_G&space;&plus;&space;\lambda^2&space;\rho&space;T_G^2&space;-&space;\lambda^2\rho&space;T_G&space;\rho&space;T_G&space;\newline&space;R_0&space;=&space;1&space;&plus;&space;\lambda&space;T_G&space;&plus;&space;\lambda^2&space;\rho&space;T_G^2&space;-&space;\lambda^2&space;\rho^2&space;T_G^2&space;\newline&space;R_0&space;=&space;1&space;&plus;&space;\lambda&space;T_G&space;&plus;&space;(\lambda&space;T_G)^2&space;(\rho&space;-&space;\rho^2)&space;\newline&space;R_0&space;=&space;1&space;&plus;&space;\lambda&space;T_G&space;&plus;&space;\rho(1&space;-&space;\rho)&space;(\lambda&space;T_G)^2" title="R_0 = (1+\frac{\lambda}{\alpha})(1+\frac{\lambda}{\gamma}) \newline R_0 = (1+\lambda T_L)(1+\lambda T_I) \newline R_0 = 1 + \lambda T_I + \lambda T_L + \lambda^2 T_I T_L \newline R_0 = 1 + \lambda (T_I + T_L) + \lambda^2 T_I T_G \frac{T_L}{T_G} \newline R_0 = 1 + \lambda T_G + \lambda^2 T_I T_G \rho \newline R_0 = 1 + \lambda T_G + \lambda^2 \rho(T_G-T_L)T_G \newline R_0 = 1 + \lambda T_G + \lambda^2 \rho T_G^2 - \lambda^2\rho T_G T_L \newline R_0 = 1 + \lambda T_G + \lambda^2 \rho T_G^2 - \lambda^2\rho T_G \frac{T_L}{T_G}T_G \newline R_0 = 1 + \lambda T_G + \lambda^2 \rho T_G^2 - \lambda^2\rho T_G \rho T_G \newline R_0 = 1 + \lambda T_G + \lambda^2 \rho T_G^2 - \lambda^2 \rho^2 T_G^2 \newline R_0 = 1 + \lambda T_G + (\lambda T_G)^2 (\rho - \rho^2) \newline R_0 = 1 + \lambda T_G + \rho(1 - \rho) (\lambda T_G)^2" /></a>
+
+I use the last line of the formula to calculate R<sub>0</sub> throughout the model.
 
 ### Disclaimer
-- Data uses API from [BlankerL](https://github.com/BlankerL/DXY-COVID-19-Crawler
+- Data uses API from [BlankerL](https://github.com/BlankerL/DXY-COVID-19-Crawler)
 
 ### Reference
 1. Li, Q., Guan, X., et al. (2020, January 29). [Early Transmission Dynamics in Wuhan, China, of Novel Coronavirus–Infected Pneumonia](https://www.nejm.org/doi/full/10.1056/NEJMoa2001316#article_references). The New England Journal of Medicine. 
