@@ -14,8 +14,8 @@
 - Tracing R<sub>0</sub> for nCoV throughout time will provide a glance of the change in R<sub>0</sub>, giving clues of the effect of social and non-pharmaceutical prevention.
 
 ### Parameters
-- T<sub>L</sub>, the generation period, is assumed to be 7.5, taken from reference 1 and 2
-- p, the ratio of susceptible (49) turning into confirmed case (59), is taken to be 0.695, numbers from [People's Daily Weibo](https://m.weibo.cn/u/2803301701)
+- T<sub>L</sub> is the generation period, which is assumed to be 7.5, taken from reference 1 and 2
+- p is the ratio of susceptible (49) turning into confirmed case (59), which is taken to be 0.695, numbers from [People's Daily Weibo](https://m.weibo.cn/u/2803301701)
 - R<sub>0</sub> estimation formula refers to reference 3. Mathematical proof is shown in the model section below
 
 ### Model
