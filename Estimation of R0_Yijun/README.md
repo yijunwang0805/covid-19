@@ -3,7 +3,7 @@
 #### Author: Yijun Wang
 #### Date: 2020-02-09
 
-### To Replicate the Result:
+### Usage:
 - Download my Jupyter notebook file: [Estimation of R0.ipynb](https://github.com/yijunwang0805/YijunWang/blob/master/Estimation%20of%20R0_Yijun/Estimation%20of%20R0.ipynb)
 
 ### Background
@@ -13,10 +13,30 @@
 
 - Tracing R<sub>0</sub> for nCoV throughout time will provide a glance of the change in R<sub>0</sub>, giving clues of the effect of social and non-pharmaceutical prevention.
 
+### Fact
+- On 2019-12-01, the first case of nCoV exhibits symptons, according to lacent ?
+- On 2020-1-23, Wuhan city lockdowns. Before Wuhan lockdown, 5 million people leave the city
+- There is a time lag between onset of symptons and case confirmed, particularly due to staff and medical supply shortage
+
+### Conclusion
+- R<sub>0</sub> exhibits a sharp upward trend from 2020-01-24 to 2020-01-29, rising from 2.24 to 2.51. Since the Wuhan city runs out of medical supply to confirm nCoV cases, the rise of R<sub>0</sub> could be the consequence of outflow of Wuhan residents before lockdown, who seek for medical assistance outside of the Wuhan city and eventually confirmed by the official.
+- Then, R<sub>0</sub> value fluctuates at 2.50 from 2020-01-30 to 2020-02-03, reaching its peak at 2.51 on 2020-02-03. Time lag between onset of symptons and case confirm is estimated to be 7 to 10 days. The halt of rising trend could be inferred as the consequence of official and social appeal of 'stay at home for 14 days' by Zhong Nanshan since the Wuhan lockdown 2020-01-23 on ?. In addition, the fluctuation could be attributed by the inner family contagion due to in-house quarantine, where family member infects one and another. 
+- Thereafter, R<sub>0</sub> is trending downward, dropping to 2.39 on 2020-02-12.
+
+### Sensitivity Analysis
+
 ### Parameters
 - T<sub>L</sub> is the generation period, which is assumed to be 7.5, taken from reference 1 and 2
 - p is the ratio of susceptible (49) turning into confirmed case (59), which is taken to be 0.695, numbers from [People's Daily Weibo](https://m.weibo.cn/u/2803301701)
 - R<sub>0</sub> estimation formula refers to reference 3. Mathematical proof is shown in the model section below
+- Median incubation period is 3 days (Zhong, 2020) ?
+
+### Assumption
+- Assume the value of p is the true value of population parameter p
+
+### Limitation
+- The model assumes parameter values are the true values of parameters
+- 
 
 ### Model
 A typical **SEIR** (susceptible, exposed, infectious, removed) model can be described as a system of differential equations
