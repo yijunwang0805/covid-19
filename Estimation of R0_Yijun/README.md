@@ -2,6 +2,7 @@
 
 #### Author: Yijun Wang
 #### Date: 2020-02-09
+#### Last Update: 2020-02-12
 
 ### Usage
 - Download my Jupyter notebook file: [Estimation of R0.ipynb](https://github.com/yijunwang0805/YijunWang/blob/master/Estimation%20of%20R0_Yijun/Estimation%20of%20R0.ipynb)
