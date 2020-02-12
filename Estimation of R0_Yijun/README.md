@@ -13,6 +13,8 @@
 - Thereafter, R<sub>0</sub> is trending downward, dropping to 2.39 on 2020-02-12. This can be viewed as the positive effect of social and non-pharmeceutical intervention (stay at home and wear facial mask)
 - Sensitivity analysis shows that the value of R<sub>0</sub> is highly influenced by the value of T<sub>g</sub>. As more cases being collected, the measure of T<sub>g</sub> will become more accurate
 
+![R0](https://user-images.githubusercontent.com/56286591/74337661-aafb6480-4ddb-11ea-8a49-9c433ddc81aa.png)
+
 ### Sensitivity Analysis
 Parameter values
 | p | rho | T<sub>g</sub> | Y(t) | R<sub>0</sub> |
