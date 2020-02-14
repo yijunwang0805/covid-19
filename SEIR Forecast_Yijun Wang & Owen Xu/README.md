@@ -20,11 +20,10 @@
 
 ### Assumption
 - Assume homogeneous features across cities
-- Assume that infected individuals were not infectious during the incubation period (Zhou, 2020)
-- Assume close environment for each individual city
-- Assume population growth and death rate are zero
-- Assume people take consistent behaviors before and after the epidemic
-- Assume no quarantine offered by the hospital
+- Assume that infected individuals were not infectious during the incubation period (Wu 2020; Zhou, 2020)
+- Assume each city as a closed environment
+- Assume population growth rate and death rate are zero
+- Assume people exhibit consistent behaviors before and during the epidemic
 
 ### Model
 A typical **SEIR** (susceptible, exposed, infectious, removed) model can be described as a system of differential equations
