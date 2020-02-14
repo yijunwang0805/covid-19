@@ -3,4 +3,5 @@
 ### Model 1: Estimation of R0
 - complete
 ### Model 2: SEIR model
-- in progress
+- add sensitivity analysis: changing I0
+- add post-intervention
