@@ -58,6 +58,17 @@ N(t) = S(t) + E(t) + I(t) + R(t)
 - The number of initial infectious takes the value of confirm counts on Jan 23, 2020.
 
 ### Analysis
+
+![wuhan](https://user-images.githubusercontent.com/56286591/74540571-fd26bc00-4f7a-11ea-883b-7dafdae79ccb.png)
+
+![beijing](https://user-images.githubusercontent.com/56286591/74540626-13cd1300-4f7b-11ea-8fce-c53ece87b628.png)
+
+![shanghai](https://user-images.githubusercontent.com/56286591/74540632-16c80380-4f7b-11ea-9e33-970eb91d4e4d.png)
+
+![guangzhou](https://user-images.githubusercontent.com/56286591/74540649-1d567b00-4f7b-11ea-8052-b14e53725776.png)
+
+
+### Sensitivity Analysis
 | Cities | Pre-Intervention Peak Time Infectious (million) | Pre-Intervention Peak Time | Current Trending Peak Time Infectious (million) | Current Trending Peak Time |
 | --- | --- | --- | --- | --- |
 | Wuhan | 132 | 2020-05-25 | 97 | 2020-06-28 |
