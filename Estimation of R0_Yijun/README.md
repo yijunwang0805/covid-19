@@ -103,9 +103,6 @@ Parameter values
 | 0.8 | 0.65 | 10 | 62102 | 3.03 |
 | 0.8 | 0.9 | 10 | 62102 | 2.72 |
 
-### Conclusion
-
-
 ### Limitation
 - This approach assumes the parameter values are the true population parameter values. We have no way to obtain the true value of p, for instance, simply because there is limitation to data access. Even if official data is published, a disproportionate ratio would fail to represent the true parameter value.
 - Due to medical shortage, the number of actual confirm cases should be greater than the official report. We would have underestimated the value of Y(t) and have a downward bias in R<sub>0</sub>. 
