@@ -40,9 +40,10 @@ Parameter values
 - R<sub>0</sub> estimation formula refers to reference 3. Mathematical proof is shown in the model section below
 
 ### Background
+- There has been a novel coronavirus (2019-nCoV) pneumonia outbreak in China since December 2019 which spreads internationally. This study seeks to quantify the basic reproduction number of 2019-nCoV throughout the outbreak.
 - R<sub>0</sub> is known as basic reproduction number. It can be understood as the expected number of cases infected by one case in a population where all individuals are susceptible to infection. If R<sub>0</sub> < 1, an epidemic will not start. If R<sub>0</sub> > 1, an epidemic will be able to start spreading out. If R<sub>0</sub> = 1, an epidemic will become an endemic.
 - The basic reproduction number R<sub>0</sub> has important implication. The greater the R<sub>0</sub>, the harder to control an epidemic. R<sub>0</sub> for SARS and Ebola virus is 0.49 and 1.51, respectively (Gerardo 2004; Althaus, 2014). 
-- Tracing R<sub>0</sub> for nCoV throughout time will provide a glance of the change in R<sub>0</sub>, giving clues of the effect of social and non-pharmaceutical prevention.
+- Tracing R<sub>0</sub> for nCoV throughout time will provide a glance of the change in R<sub>0</sub>, giving clues of the effectiveness of social and non-pharmaceutical prevention.
 
 ### Fact
 - On 2019-12-01, the first case of nCoV exhibits symptons, according to [Huang's Clinical features of patients infected with 2019 novel coronavirus in Wuhan, China](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30183-5/fulltext#seccestitle10). This date is used as the first day of the epidemic.
