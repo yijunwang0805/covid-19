@@ -78,7 +78,7 @@ This will be the formula estimating R<sub>0</sub> in the code. Here is the **mat
 - p is the ratio of susceptible (49) turning into confirmed case (59), which is taken to be 0.695, numbers from [People's Daily Weibo](https://m.weibo.cn/u/2803301701)
 - Median incubation period is assumed to be 3 days, according to Guan's [Clinical characteristics of 2019 novel coronavirus infection in China](https://www.medrxiv.org/content/10.1101/2020.02.06.20020974v1) (2020)
 - rho is the ratio of incubation period over generation period, which is assumed to be 0.4 in the baseline scenario
-- R<sub>0</sub> estimation formula refers to reference 3. Mathematical proof is shown in the model section below
+- R<sub>0</sub> estimation formula refers to reference 3.
 
 ### Analysis
 
