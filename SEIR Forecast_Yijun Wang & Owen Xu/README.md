@@ -8,10 +8,12 @@
 - Download my Jupyter notebook file: [SEIR.ipynb](https://github.com/yijunwang0805/YijunWang/blob/master/SEIR%20Forecast_Yijun%20Wang%20%26%20Owen%20Xu/SEIR.ipynb)
 
 ### Summary
-- This study seeks to forecast the number of SARS-CoV-2 infectious cases. This study finds that under the current situation, Wuhan, Beijing, Shanghai would have 0.9, 4.9, 7 million infectious cases at the peak point on 2020-06-28, 2020-04-14, and 2020-04-02, respectively. Result finds that reducing the basic reproduction number would reduce the number of infectious cases, while prolong the peak point and thus the duration of the epidemic
+- This study seeks to forecast the number of SARS-CoV-2 infectious cases. This study finds that under the current situation, Wuhan, Beijing, Shanghai would have 0.9, 4.9, 7 million infectious cases at the peak time on 2020-06-28, 2020-04-14, and 2020-04-02, respectively. Result finds that reducing the basic reproduction number would reduce the number of infectious cases, while prolong the peak time and thus the duration of the epidemic
 
 ### Results
-| Cities | Pre-Intervention Peak Point Infectious (million) | Pre-Intervention Peak Point | Current Trending Peak Point Infectious (million) | Current Trending Peak Point |
+| Cities | Pre-Intervention Peak Time Infectious (million) | Pre-Intervention Peak Time | Current Trending Peak Time Infectious (million) | Current Trending 
+
+Time |
 | --- | --- | --- | --- | --- |
 | Wuhan | 132 | 2020-05-25 | 97 | 2020-06-28 |
 | Beijing | 543 | 2020-04-02 | 489 | 2020-04-14 |
