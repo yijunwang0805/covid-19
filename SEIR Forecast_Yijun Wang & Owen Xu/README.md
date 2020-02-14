@@ -49,7 +49,7 @@
 
 ### Limitation
 - Due to medical supply and hospital bed shortage, the real number of infectious is not proportionately reflected by the number of confirm counts
-- Assumption of homogeneous feature across city
+- Assumption of homogeneous feature across city and parameter values
 
 ### Disclaimer
 - Data uses API from [BlankerL](https://github.com/BlankerL/DXY-COVID-19-Crawler), which is an infection data realtime crawler. The data source is [Ding Xiang Yuan](https://3g.dxy.cn/newh5/view/pneumonia).
