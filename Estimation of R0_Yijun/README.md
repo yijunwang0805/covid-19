@@ -2,10 +2,13 @@
 
 #### Author: Yijun Wang
 #### Date: 2020-02-09
-#### Last Update: 2020-02-12
+#### Last Update: 2020-02-14
 
 ### Usage
 - Download my Jupyter notebook file: [Estimation of R0.ipynb](https://github.com/yijunwang0805/YijunWang/blob/master/Estimation%20of%20R0_Yijun/Estimation%20of%20R0.ipynb)
+
+### Summary
+- This study seeks to estimate the basic reproduction number by deriving R<sub>0<\sub> from the SEIR model. As of 2020-02-14, R<sub>0<\sub> is estimated to be 2.41.
 
 ### Background
 - There has been a novel coronavirus (2019-nCoV) pneumonia outbreak in China since December 2019 which spreads internationally. This study seeks to quantify the basic reproduction number of 2019-nCoV throughout the outbreak.
