@@ -8,7 +8,7 @@
 - Download my Jupyter notebook file: [SEIR.ipynb](https://github.com/yijunwang0805/YijunWang/blob/master/SEIR%20Forecast_Yijun%20Wang%20%26%20Owen%20Xu/SEIR.ipynb)
 
 ### Summary
-- This study seeks to forecast the number of SARS-CoV-2 infectious cases. This study finds that under the current scenario, if no quarantine or other intervention applies, Wuhan, Beijing, Shanghai would have 0.9, 4.9, 7 million infectious cases at the peak time on 2020-05-06, 2020-04-14, and 2020-04-02, respectively. 
+- This study seeks to forecast the number of SARS-CoV-2 cases. Results find that if no further mitigation intervention applies, Wuhan, would have 1.7 million infectious at the epidemic peak on March 3, 2020, and Beijing, Shanghai, and Guangzhou would have 3.9, 5.2, 4.2 million infectious cases at the peak time in the middle of June.
 
 ### Background
 -  There has been a novel coronavirus (2019-nCoV) pneumonia outbreak in Wuhan, China since December 2019 which spreads internationally. 
@@ -23,6 +23,8 @@
 - Assume each city as a closed environment
 - Assume population growth rate and death rate are zero
 - Assume people exhibit consistent behaviors before and during the epidemic
+- Assume the number of initial infectious takes the value of the confirm counts
+- Assume no quarantine or other mitigation intervention is implemented
 
 ### Model
 A typical **SEIR** (susceptible, exposed, infectious, removed) model can be described as a system of differential equations
@@ -44,7 +46,7 @@ N(t) is the population at time t
 N(t) = S(t) + E(t) + I(t) + R(t)
 
 ### Parameters
-- The value of```R0``` takes estimation from [Estimation of R0.ipynb](https://github.com/yijunwang0805/YijunWang/blob/master/Estimation%20of%20R0_Yijun/Estimation%20of%20R0.ipynb) as of writing this study Feb 15, 2020, while research varies from 1.4 to 3.9 (WHO, 2020; Zhou, 2020; Read, 2020).
+- The value of```R0``` takes the newest estimation from [Estimation of R0.ipynb](https://github.com/yijunwang0805/YijunWang/blob/master/Estimation%20of%20R0_Yijun/Estimation%20of%20R0.ipynb) as of writing this study Feb 15, 2020, while research varies from 1.4 to 3.9 (WHO, 2020; Zhou, 2020; Read, 2020).
   * [Zhao](https://www.ijidonline.com/article/S1201-9712(20)30053-9/fulltext) estimates that the mean R0 ranges from 2.24 to 3.58.
   * [WHO](https://www.who.int/news-room/detail/23-01-2020-statement-on-the-meeting-of-the-international-health-regulations-(2005)-emergency-committee-regarding-the-outbreak-of-novel-coronavirus-(2019-ncov))'s preliminary estimate of R<sub>0</sub> is in the range of 1.4 to 2.5. 
   * [Zhou, et al](https://arxiv.org/abs/2001.10530) estimates basic reproduction number falls between 2.8 to 3.9. 
@@ -58,7 +60,7 @@ N(t) = S(t) + E(t) + I(t) + R(t)
 
 ![wuhan](https://user-images.githubusercontent.com/56286591/74587420-15571380-502d-11ea-955a-c6869b693af4.png)
 
-**City Infectious and Peak Time Forecast**
+**Forecast Infectious**
 | Cities | Forecast Infectious Counts at Peak Time | Peak Date | 
 | --- | --- | --- | 
 | Beijing | 3,943,645 | 2020-05-11 | 
@@ -66,24 +68,25 @@ N(t) = S(t) + E(t) + I(t) + R(t)
 | Guangzhou | 4,241,083  | 2020-05-21 | 
 | Wuhan | 1,734,367 | 2020-03-03 |
 
+Assuming similar transmissibility in all the cities, Shanghai will have the largest magnitude of epidemic while Wuhan will have the earliest peak time.
+
 **Sensitivity Analysis**
-| Wuhan | N/2 | I(0)/2 | R<sub>0</sub>/2
+| Wuhan | N/2 | I(0)/2 | beta/2
 | --- | --- | --- | --- |
 | Forecast Infectious Counts at Peak Time| 335,692 | 1,734,473 | 660,246
 | Peak Date | 2020-06-10 | 2020-03-09 | 2020-06-18
 
-The number of susceptibles has the highest impact among all the other parameter in this study. A 50% reduction of susceptible counts would lead to a 80% peak time infectious, controlling for all the other variables. Therefore, intervention such as wearing facial mask, keep at home, stop gathering or having dinner together would deduct the number of susceptibles, hence reduce the number of infectious.
+If transmissibility ```beta``` was reduced by 50% in all cities, both the growth rate and magnitude of Wuhan epidemic would be substantially reduced. The epidemic peak would be delayed by about 2 months and its magnitude reduced by about 60%. The reduction in
+transmissibility would push the viral reproductive number to about 1.2, in which case the epidemic would grow slowly without peaking during the first half of 2020.
 
-Change in the number of initial infectious would not result in a significant difference in the number of infectiousness and the timing of the peak infectious.
+Similarly, a 50% reduction in the catchment size ```N``` would reduce the magnitude of the epidemic by 80%, controlling for all the other variables. The epidemic peak would also be prolonged by approximately 2 months. 
 
-Result finds that a 50% reduction in ```R0``` would lead to a 62% drop of the infectious count at the peak point, controlling for all the other variables.
-
-Even though cutting down the number of infectiousness, the reduction of ```R0``` and ```N``` would lead to a flatter distribution of infectious, thus prolonging the peak time and the duration of the epidemic.
+Unlike transmissibility and catchment size, our estimates suggested that a 50% reduction in initial infectious ```I(0)``` would have a negligible effect on epidemic dynamics.
 
 ### Limitation
-- Due to medical supply and hospital bed shortage, the real number of infectious is not proportionately reflected by the number of confirm counts
-- Assumption of homogeneous feature across city and parameter values
-- Assumption of consistent reaction before and during the epidemic is irrational.
+- Due to medical supply and hospital bed shortage, the real number of infectious is not proportionately reflected by the number of confirm counts.
+- Assumption of homogeneous feature across city might not be true.
+- Assumption of consistent reaction before and during the epidemic is irrational, given that people take non-pharmeceutical intervention such as wearing facial mask and urban and rural area would take the heterogeneous intervention.
 
 ### Disclaimer
 - Data uses API from [BlankerL](https://github.com/BlankerL/DXY-COVID-19-Crawler), which is an infection data realtime crawler. The data source is [Ding Xiang Yuan](https://3g.dxy.cn/newh5/view/pneumonia).
