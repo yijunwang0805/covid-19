@@ -59,7 +59,7 @@ N(t) = S(t) + E(t) + I(t) + R(t)
 
 ### Analysis
 
-![wuhan](https://user-images.githubusercontent.com/56286591/74540571-fd26bc00-4f7a-11ea-883b-7dafdae79ccb.png)
+![wuhan](https://user-images.githubusercontent.com/56286591/74581787-79a6b280-4fee-11ea-9e30-69c0966407ca.png)
 
 ![beijing](https://user-images.githubusercontent.com/56286591/74540626-13cd1300-4f7b-11ea-8fce-c53ece87b628.png)
 
