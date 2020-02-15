@@ -8,15 +8,14 @@
 - Download my Jupyter notebook file: [SEIR.ipynb](https://github.com/yijunwang0805/YijunWang/blob/master/SEIR%20Forecast_Yijun%20Wang%20%26%20Owen%20Xu/SEIR.ipynb)
 
 ### Summary
-- This study seeks to forecast the number of SARS-CoV-2 infectious cases. This study finds that under the current scenario, Wuhan, Beijing, Shanghai would have 0.9, 4.9, 7 million infectious cases at the peak time on 2020-06-28, 2020-04-14, and 2020-04-02, respectively. Result finds that reducing the basic reproduction number would reduce the number of infectious cases, while prolong the peak time and thus the duration of the epidemic
+- This study seeks to forecast the number of SARS-CoV-2 infectious cases. This study finds that under the current scenario, if no quarantine or other intervention applies, Wuhan, Beijing, Shanghai would have 0.9, 4.9, 7 million infectious cases at the peak time on 2020-05-06, 2020-04-14, and 2020-04-02, respectively. 
 
 ### Background
--  There has been a novel coronavirus (2019-nCoV) pneumonia outbreak in China since December 2019 which spreads internationally. 
-- On 2019-12-01, the first case of nCoV exhibits symptons, according to Huang's [Clinical features of patients infected with 2019 novel coronavirus in Wuhan, China](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30183-5/fulltext#seccestitle10). This date is used as the first day of the epidemic.
-- On 2020-1-23, Wuhan city lockdowns [(ifeng news)](http://news.ifeng.com/c/7tpL47zV2Vy). Before Wuhan lockdown, 5 million people leave the city [(Tencent News)](https://new.qq.com/sv1/qd/aoyou.html?cmsid=20200127A0EFXJ00)
-- There is a time lag between onset of symptons and case confirmed, particularly due to staff and medical supply shortage
-- The median time from onset of symptoms to first hospital admission was 7 days, according to Huang's [Clinical features of patients infected with 2019 novel coronavirus in Wuhan, China](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30183-5/fulltext#seccestitle10) (2020).
-- After the Wuhan outbreak, people quaratine at home if their cases are not severe, which is a common practice to avoid cross-infection. 
+-  There has been a novel coronavirus (2019-nCoV) pneumonia outbreak in Wuhan, China since December 2019 which spreads internationally. 
+- On 2019-12-01, the first case of nCoV exhibits symptons, according to Huang's [Clinical features of patients infected with 2019 novel coronavirus in Wuhan, China](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30183-5/fulltext#seccestitle10). This date is used as the first day of the epidemic for Wuhan city.
+- On 2020-1-23, Wuhan city lockdowns [(ifeng news)](http://news.ifeng.com/c/7tpL47zV2Vy). Before Wuhan lockdown, 5 million people left the city [(Tencent News)](https://new.qq.com/sv1/qd/aoyou.html?cmsid=20200127A0EFXJ00). This date will be used as the start of the epidemic for the rest of China.
+- There is a time lag between onset of symptons and case confirmed, particularly due to staff and medical supply shortage. The median time from onset of symptoms to first hospital admission was 7 days, according to Huang's [Clinical featupracticeres of patients infected with 2019 novel coronavirus in Wuhan, China](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30183-5/fulltext#seccestitle10) (2020).
+- After the Wuhan outbreak, people quaratine at home if their cases are not severe, which is a common  to avoid cross-infection. 
 
 ### Assumption
 - Assume homogeneous features across cities
@@ -59,26 +58,29 @@ N(t) = S(t) + E(t) + I(t) + R(t)
 
 ### Analysis
 
-![wuhan](https://user-images.githubusercontent.com/56286591/74581787-79a6b280-4fee-11ea-9e30-69c0966407ca.png)
+Forecasts uses the current R<sub>0</sub> estimated from [Estimation of R0.ipynb](https://github.com/yijunwang0805/YijunWang/blob/master/Estimation%20of%20R0_Yijun/Estimation%20of%20R0.ipynb) to simulate the current situation.
+Result finds that reducing the basic reproduction number would reduce the number of infectious cases, while prolong the peak time and thus the duration of the epidemic
 
-![beijing](https://user-images.githubusercontent.com/56286591/74540626-13cd1300-4f7b-11ea-8fce-c53ece87b628.png)
+![wuhan](https://user-images.githubusercontent.com/56286591/74587420-15571380-502d-11ea-955a-c6869b693af4.png)
 
-![shanghai](https://user-images.githubusercontent.com/56286591/74540632-16c80380-4f7b-11ea-9e33-970eb91d4e4d.png)
+**City Infectious and Peak Time Forecast**
+| Cities | Forecast Infectious Counts at Peak Time | Peak Date | 
+| --- | --- | --- | 
+| Beijing | 3,943,645 | 2020-05-11 | 
+| Shanghai | 5,213,689 | 2020-05-16 | 
+| Guangzhou | 4,241,083  | 2020-05-21 | 
+| Wuhan | 1,734,367 | 2020-03-03 |
 
-![guangzhou](https://user-images.githubusercontent.com/56286591/74540649-1d567b00-4f7b-11ea-8052-b14e53725776.png)
-
-
-### Sensitivity Analysis
-| Cities | Pre-Intervention Peak Time Infectious (million) | Pre-Intervention Peak Time | Current Trending Peak Time Infectious (million) | Current Trending Peak Time |
-| --- | --- | --- | --- | --- |
-| Wuhan | 132 | 2020-05-25 | 97 | 2020-06-28 |
-| Beijing | 543 | 2020-04-02 | 489 | 2020-04-14 |
-| Shanghai | 792 | 2020-03-23 | 736 | 2020-04-02 |
-| Guangzhou | 601 | 2020-04-04 | 547 | 2020-04-17 |
+**Sensitivity Analysis**
+| Wuhan | N/2 | I(0)/2 | R<sub>0</sub>/2
+| --- | --- | --- | --- |
+| Forecast Infectious Counts at Peak Time| 335,692 | 1,734,473 | 660,246
+| Peak Date | 2020-06-10 | 2020-03-09 | 2020-06-18
 
 ### Limitation
 - Due to medical supply and hospital bed shortage, the real number of infectious is not proportionately reflected by the number of confirm counts
 - Assumption of homogeneous feature across city and parameter values
+- Assumption of consistent reaction before and during the epidemic is irrational.
 
 ### Disclaimer
 - Data uses API from [BlankerL](https://github.com/BlankerL/DXY-COVID-19-Crawler), which is an infection data realtime crawler. The data source is [Ding Xiang Yuan](https://3g.dxy.cn/newh5/view/pneumonia).
