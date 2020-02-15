@@ -2,7 +2,7 @@
 
 #### Author: Yijun Wang, Owen Xu
 #### Date: 2020-02-14
-#### Last Update: 2020-02-14
+#### Last Update: 2020-02-15
 
 ### Usage
 - Download my Jupyter notebook file: [SEIR.ipynb](https://github.com/yijunwang0805/YijunWang/blob/master/SEIR%20Forecast_Yijun%20Wang%20%26%20Owen%20Xu/SEIR.ipynb)
@@ -44,7 +44,7 @@ N(t) is the population at time t
 N(t) = S(t) + E(t) + I(t) + R(t)
 
 ### Parameters
-- At the begginning of the epidemic, the value of R<sub>0</sub> ```R0_ini``` is assumed to take the value of 3.0, while research varies from 1.4 to 3.9 (WHO, 2020; Zhou, 2020; Read, 2020).
+- The value of```R0``` takes the R<sub>0</sub> estimated from [Estimation of R0.ipynb](https://github.com/yijunwang0805/YijunWang/blob/master/Estimation%20of%20R0_Yijun/Estimation%20of%20R0.ipynb) as of writing this study Feb 15, 2020, while research varies from 1.4 to 3.9 (WHO, 2020; Zhou, 2020; Read, 2020).
   * [Zhao](https://www.ijidonline.com/article/S1201-9712(20)30053-9/fulltext) estimates that the mean R0 ranges from 2.24 to 3.58.
   * [WHO](https://www.who.int/news-room/detail/23-01-2020-statement-on-the-meeting-of-the-international-health-regulations-(2005)-emergency-committee-regarding-the-outbreak-of-novel-coronavirus-(2019-ncov))'s preliminary estimate of R<sub>0</sub> is in the range of 1.4 to 2.5. 
   * [Zhou, et al](https://arxiv.org/abs/2001.10530) estimates basic reproduction number falls between 2.8 to 3.9. 
@@ -58,7 +58,6 @@ N(t) = S(t) + E(t) + I(t) + R(t)
 
 ### Analysis
 
-Forecasts uses the current R<sub>0</sub> estimated from [Estimation of R0.ipynb](https://github.com/yijunwang0805/YijunWang/blob/master/Estimation%20of%20R0_Yijun/Estimation%20of%20R0.ipynb) to simulate the current situation.
 Result finds that reducing the basic reproduction number would reduce the number of infectious cases, while prolong the peak time and thus the duration of the epidemic
 
 ![wuhan](https://user-images.githubusercontent.com/56286591/74587420-15571380-502d-11ea-955a-c6869b693af4.png)
