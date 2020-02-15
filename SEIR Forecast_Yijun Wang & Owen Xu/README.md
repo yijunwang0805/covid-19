@@ -44,21 +44,17 @@ N(t) is the population at time t
 N(t) = S(t) + E(t) + I(t) + R(t)
 
 ### Parameters
-- The value of```R0``` takes the R<sub>0</sub> estimated from [Estimation of R0.ipynb](https://github.com/yijunwang0805/YijunWang/blob/master/Estimation%20of%20R0_Yijun/Estimation%20of%20R0.ipynb) as of writing this study Feb 15, 2020, while research varies from 1.4 to 3.9 (WHO, 2020; Zhou, 2020; Read, 2020).
+- The value of```R0``` takes estimation from [Estimation of R0.ipynb](https://github.com/yijunwang0805/YijunWang/blob/master/Estimation%20of%20R0_Yijun/Estimation%20of%20R0.ipynb) as of writing this study Feb 15, 2020, while research varies from 1.4 to 3.9 (WHO, 2020; Zhou, 2020; Read, 2020).
   * [Zhao](https://www.ijidonline.com/article/S1201-9712(20)30053-9/fulltext) estimates that the mean R0 ranges from 2.24 to 3.58.
   * [WHO](https://www.who.int/news-room/detail/23-01-2020-statement-on-the-meeting-of-the-international-health-regulations-(2005)-emergency-committee-regarding-the-outbreak-of-novel-coronavirus-(2019-ncov))'s preliminary estimate of R<sub>0</sub> is in the range of 1.4 to 2.5. 
   * [Zhou, et al](https://arxiv.org/abs/2001.10530) estimates basic reproduction number falls between 2.8 to 3.9. 
   * Read, et al's [Novel coronavirus 2019-nCoV: early estimation of epidemiological parameters and epidemic predictions](https://www.medrxiv.org/content/10.1101/2020.01.23.20018549v2.article-info) estimates R<sub>0</sub> to be 3.11.
-- Trending R0 refers to model ["Estimation of R0"](https://github.com/yijunwang0805/YijunWang/tree/master/Estimation%20of%20R0_Yijun). Value is taken at 8:42 am on 02-14-2020.
-- Wuhan population refers to [The Economic Observer](https://baijiahao.baidu.com/s?id=1656943894281117716&wfr=spider&for=pc).
-- Beijing population refers to [World Population Review](http://worldpopulationreview.com/world-cities/beijing/).
-- Shanghai population refers to [World Population Review](http://worldpopulationreview.com/world-cities/shanghai/).
-- The date Wuhan implemented lockdown, January 23, 2020, is used as the first day of the forecast.
+- City population parameter ```N``` refers to [The Economic Observer](https://baijiahao.baidu.com/s?id=1656943894281117716&wfr=spider&for=pc).
+- The date Wuhan implemented lockdown, January 23, 2020, is used as the first day of the forecast for all the city except Wuhan.
+- The first case is documented on December 1, 2019 in Wuhan, which is used as the first day of the forecast for Wuhan. 
 - The number of initial infectious takes the value of confirm counts on Jan 23, 2020.
 
 ### Analysis
-
-Result finds that reducing the basic reproduction number would reduce the number of infectious cases, while prolong the peak time and thus the duration of the epidemic
 
 ![wuhan](https://user-images.githubusercontent.com/56286591/74587420-15571380-502d-11ea-955a-c6869b693af4.png)
 
@@ -75,6 +71,14 @@ Result finds that reducing the basic reproduction number would reduce the number
 | --- | --- | --- | --- |
 | Forecast Infectious Counts at Peak Time| 335,692 | 1,734,473 | 660,246
 | Peak Date | 2020-06-10 | 2020-03-09 | 2020-06-18
+
+The number of susceptibles has the highest impact among all the other parameter in this study. A 50% reduction of susceptible counts would lead to a 80% peak time infectious, controlling for all the other variables. Therefore, intervention such as wearing facial mask, keep at home, stop gathering or having dinner together would deduct the number of susceptibles, hence reduce the number of infectious.
+
+Change in the number of initial infectious would not result in a significant difference in the number of infectiousness and the timing of the peak infectious.
+
+Result finds that a 50% reduction in ```R0``` would lead to a 62% drop of the infectious count at the peak point, controlling for all the other variables.
+
+Even though cutting down the number of infectiousness, the reduction of ```R0``` and ```N``` would lead to a flatter distribution of infectious, thus prolonging the peak time and the duration of the epidemic.
 
 ### Limitation
 - Due to medical supply and hospital bed shortage, the real number of infectious is not proportionately reflected by the number of confirm counts
