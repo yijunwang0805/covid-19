@@ -5,9 +5,7 @@
   * Estimate the value of basic reproduction number
 - Usage
   * Download my Jupyter notebook file: [Estimation of R0.ipynb](https://github.com/yijunwang0805/YijunWang/blob/master/Estimation%20of%20R0_Yijun/Estimation%20of%20R0.ipynb).
-
-  * First part of code will load data from a API connection, which is provided by [BlankerL](https://lab.isaaclin.cn/nCoV/). 
-
+  
   * ```R0Func()``` is the function that calculates the basic reproduction number. Its ```inputs``` are the number of ```confirm``` cases, the number of ```suspect``` cases, and days ```t``` since the start of the epidemic. Here, we use the December 1st, 2019 as the start of the epidemic, which is the first nCoV case reported. 
 
 - Summary
@@ -18,9 +16,7 @@
   * Forecast the SARS-CoV-2 epidemic peak size and peak time in metropolis by applying a deterministic SEIR metapopulation transmission model
 - Usage
   * Download my Jupyter notebook file: [SEIR.ipynb](https://github.com/yijunwang0805/YijunWang/blob/master/SEIR%20Forecast_Yijun%20Wang%20%26%20Owen%20Xu/SEIR.ipynb).
-
-  * First part of the code will load data from an API connection, which is provided by [BlankerL](https://lab.isaaclin.cn/nCoV/). 
-
+  
   * ```R0Func()``` is the function that calculates the newest basic reproduction number given up to date statistics. Its ```inputs``` are the number of ```confirm``` cases, the number of ```suspect``` cases, and days ```t``` since the start of the epidemic. Here, we use the December 1st, 2019 as the start of the epidemic, which is the first nCoV case reported. 
   * ```SEIR()``` is the epidemic model that describes the system of differential equations.
   * ```betaFunc()``` and ```gammaFunc()``` calculate the value of transmissibility and removal rate, respectively.
@@ -31,3 +27,8 @@
 
 ### Model 3: Impact on Economic Growth
 - In progress
+
+
+### Special Thanks to 
+- [Wuhan 2020](https://wh.opensource-service.cn/#/)'s support
+- [BlankerL](https://github.com/BlankerL/DXY-COVID-19-Crawler)'s Crawler
