@@ -89,9 +89,7 @@ Similarly, a 50% reduction in the catchment size ```N``` would reduce the magnit
 Unlike transmissibility and catchment size, our estimates suggested that a 50% reduction in initial infectious ```I(0)``` would have a negligible effect on epidemic dynamics.
 
 ### Limitation
-- Due to medical supply and hospital bed shortage, the real number of infectious is not proportionately reflected by the number of confirm counts.
-- Assumption of homogeneous feature across city might not be true.
-- Assumption of consistent reaction before and during the epidemic is irrational, given that people take non-pharmeceutical intervention such as wearing facial mask and urban and rural area would take the heterogeneous intervention.
+- Our findings are critically dependent on the assumptions underpinning our model, and the timing and reporting of confirm cases. It is also vulnerable to variation in medical supply, heterogeneity across cities, and consistent behavior during the epidemic.
 
 ### Disclaimer
 - Data uses API from [BlankerL](https://github.com/BlankerL/DXY-COVID-19-Crawler), which is an infection data realtime crawler. The data source is [Ding Xiang Yuan](https://3g.dxy.cn/newh5/view/pneumonia).
@@ -107,6 +105,8 @@ Unlike transmissibility and catchment size, our estimates suggested that a 50% r
 
 1. Gerardo Chowell, Carlos, P., et al. (2004, July). Model Parameters and Outbreak Control for SARS.
 
-1. [Beijing Population](http://worldpopulationreview.com/world-cities/beijing/). (2019-05-12). Retrieved 2020-02-14
+1. [Population](http://worldpopulationreview.com/world-cities/). (2019-05-12). Retrieved 2020-02-14
 
-1. [Shanghai Population](http://worldpopulationreview.com/world-cities/shanghai/). (2019-05-12). Retrieved 2020-02-14
+1. Read JM, Bridgen JRE, Cummings DAT, Ho A, Jewell CP. [Novel coronavirus
+2019-nCoV: early estimation of epidemiological parameters and epidemic predictions](https://www.medrxiv.org/content/10.1101/2020.01.23.20018549v1.full.pdf).
+medRxiv. 2020:2020.01.23.20018549. doi: 10.1101/2020.01.23.20018549.
