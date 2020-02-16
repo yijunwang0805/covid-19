@@ -35,19 +35,19 @@
 
  <a href="https://www.codecogs.com/eqnedit.php?latex=\small&space;\frac{dS}{dt}&space;=&space;-\beta&space;frac{S(t)I(t)}{N}&space;\newline&space;\frac{dE}{dt}&space;=&space;\beta&space;\frac{S(t)I(t)}{N}&space;-&space;\alpha&space;E(t)&space;\newline&space;\frac{dI}{dt}&space;=&space;\alpha&space;E(t)&space;-&space;\gamma&space;I(t)&space;\newline&space;\frac{dR(t)}{dt}&space;=&space;\gamma&space;I(t)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\small&space;\frac{dS}{dt}&space;=&space;-\beta&space;\frac{S(t)I(t)}{N}&space;\newline&space;\frac{dE}{dt}&space;=&space;\beta&space;\frac{S(t)I(t)}{N}&space;-&space;\alpha&space;E(t)&space;\newline&space;\frac{dI}{dt}&space;=&space;\alpha&space;E(t)&space;-&space;\gamma&space;I(t)&space;\newline&space;\frac{dR(t)}{dt}&space;=&space;\gamma&space;I(t)" title="\small \frac{dS}{dt} = -\beta \frac{S(t)I(t)}{N} \newline \frac{dE}{dt} = \beta \frac{S(t)I(t)}{N} - \alpha E(t) \newline \frac{dI}{dt} = \alpha E(t) - \gamma I(t) \newline \frac{dR(t)}{dt} = \gamma I(t)" /></a>
 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; where,
+   
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; S(t) is the number of susceptible at time t
 
-   where,
-   S(t) is the number of susceptible at time t
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; E(t) is the number of exposed at time t
 
-   E(t) is the number of exposed at time t
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I(t) is the number of infectious at time t
 
-   I(t) is the number of infectious at time t
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; R(t) is the number of removed, which includes the number of recovered and dead at time t
 
-   R(t) is the number of removed, which includes the number of recovered and dead at time t
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; N(t) is the population at time t
 
-   N(t) is the population at time t
-
-   N(t) = S(t) + E(t) + I(t) + R(t)
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; N(t) = S(t) + E(t) + I(t) + R(t)
 
 ### Model 3: Impact on Economic Growth
 - In progress
