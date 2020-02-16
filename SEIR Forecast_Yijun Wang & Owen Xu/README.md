@@ -107,8 +107,8 @@ Unlike transmissibility and catchment size, our estimates suggested that a 50% r
 
 1. Gerardo Chowell, Carlos, P., et al. (2004, July). Model Parameters and Outbreak Control for SARS.
 
-1. Beijing Population. (2019-05-12). Retrieved 2020-02-14, from http://worldpopulationreview.com/world-cities/beijing/
+1. [Beijing Population](http://worldpopulationreview.com/world-cities/beijing/). (2019-05-12). Retrieved 2020-02-14
 
-1. Shanghai Population. (2019-05-12). Retrieved 2020-02-14, from http://worldpopulationreview.com/world-cities/shanghai/
+1. [Shanghai Population](http://worldpopulationreview.com/world-cities/shanghai/). (2019-05-12). Retrieved 2020-02-14
 
 
