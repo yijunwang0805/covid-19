@@ -2,7 +2,7 @@
 
 #### Author: Yijun Wang, Owen Xu
 #### Date: 2020-02-14
-#### Last Update: 2020-02-15
+#### Last Update: 2020-02-16
 
 ### Usage
 - Download my Jupyter notebook file: [SEIR.ipynb](https://github.com/yijunwang0805/YijunWang/blob/master/SEIR%20Forecast_Yijun%20Wang%20%26%20Owen%20Xu/SEIR.ipynb).
