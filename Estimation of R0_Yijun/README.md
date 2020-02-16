@@ -2,7 +2,7 @@
 
 #### Author: Yijun Wang
 #### Date: 2020-02-09
-#### Last Update: 2020-02-14
+#### Last Update: 2020-02-16
 
 ### Usage
 - Download my Jupyter notebook file: [Estimation of R0.ipynb](https://github.com/yijunwang0805/YijunWang/blob/master/Estimation%20of%20R0_Yijun/Estimation%20of%20R0.ipynb)
@@ -81,6 +81,8 @@ This will be the formula estimating R<sub>0</sub> in the code. Here is the **mat
 - Median incubation period is assumed to be 3 days, according to Guan's [Clinical characteristics of 2019 novel coronavirus infection in China](https://www.medrxiv.org/content/10.1101/2020.02.06.20020974v1) (2020)
 - rho is the ratio of incubation period over generation period, which is assumed to be 0.4 in the baseline scenario
 - R<sub>0</sub> estimation formula refers to reference 3.
+- Y<sub>t</sub> `Yt` is the estimated infectious
+- Lambda `lamda` is the growth rate of estimated infectious
 
 ### Analysis
 
