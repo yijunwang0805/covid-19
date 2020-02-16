@@ -110,5 +110,3 @@ Unlike transmissibility and catchment size, our estimates suggested that a 50% r
 1. [Beijing Population](http://worldpopulationreview.com/world-cities/beijing/). (2019-05-12). Retrieved 2020-02-14
 
 1. [Shanghai Population](http://worldpopulationreview.com/world-cities/shanghai/). (2019-05-12). Retrieved 2020-02-14
-
-
