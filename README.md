@@ -1,4 +1,5 @@
-# Yijun Wang (Feb 10 - 14, 2020)
+# Yijun Wang 
+# (Feb 10 - 14, 2020)
 ### Model 1: Estimation of R<sub>0</sub>
 - Purpose
   * Estimate the value of basic reproduction number
