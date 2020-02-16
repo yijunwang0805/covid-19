@@ -13,7 +13,7 @@
 - Summary
   * This study seeks to estimate the basic reproduction number by deriving R<sub>0</sub> from the SEIR model. As of 2020-02-14, R<sub>0</sub> is estimated to be 2.41.
 
-### Model 2: SEIR model
+### Model 2: Forecasting Using SEIR model
 - Purpose
   * Forecast the SARS-CoV-2 epidemic peak size and peak time in metropolis by applying a deterministic SEIR metapopulation transmission model
 - Usage
@@ -28,3 +28,6 @@
 - Summary
   * This study seeks to forecast the number of SARS-CoV-2 cases. We find, under certain assumptions, Wuhan would have 1.7 million infectious at the epidemic peak on March 3, 2020, and Beijing, Shanghai, and Guangzhou would have 3.9, 5.2, 4.2 million infectious cases at the peak time in the middle of May. 
   * Sensitivity analysis shows that reducing half of the number of catchment size and the reproductive number would reduce the magnitude of epidemic by more than 60% while lengthening the peak to June and duration of the epidemic to August.
+
+### Model 3: Impact on Economic Growth
+- In progress
