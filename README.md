@@ -30,5 +30,5 @@
 
 
 ### Special Thanks to 
-- [Wuhan 2020](https://wh.opensource-service.cn/#/)'s support
+- [Wuhan 2020](https://wh.opensource-service.cn/#/)'s platform
 - [BlankerL](https://github.com/BlankerL/DXY-COVID-19-Crawler)'s Crawler
