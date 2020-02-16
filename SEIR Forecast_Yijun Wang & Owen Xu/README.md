@@ -5,13 +5,18 @@
 #### Last Update: 2020-02-15
 
 ### Usage
-- Download my Jupyter notebook file: [SEIR.ipynb](https://github.com/yijunwang0805/YijunWang/blob/master/SEIR%20Forecast_Yijun%20Wang%20%26%20Owen%20Xu/SEIR.ipynb)
+- Download my Jupyter notebook file: [SEIR.ipynb](https://github.com/yijunwang0805/YijunWang/blob/master/SEIR%20Forecast_Yijun%20Wang%20%26%20Owen%20Xu/SEIR.ipynb).
+- First part of the code will load data from an API connection, which is provided by [BlankerL](https://lab.isaaclin.cn/nCoV/). 
+- ```R0Func()``` is the function that calculates the newest basic reproduction number given up to date statistics. Its ```inputs``` are the number of ```confirm``` cases, the number of ```suspect``` cases, and days ```t``` since the start of the epidemic. Here, we use the December 1st, 2019 as the start of the epidemic, which is the first nCoV case reported. 
+- ```SEIR()``` is the epidemic model that describes the system of differential equations.
+- ```betaFunc()``` and ```gammaFunc()``` calculate the value of transmissibility and removal rate, respectively.
+- ```spi.odeint()``` solves the system of differential equations. Its ```inputs``` are the epidemic model ```SEIR()```, initial value of susceptible, exposed, infectious, removal ```INI```, and the number of days since the epidemic ```Time```
 
 ### Summary
-- This study seeks to forecast the number of SARS-CoV-2 cases. Results find that if no further mitigation intervention applies, Wuhan, would have 1.7 million infectious at the epidemic peak on March 3, 2020, and Beijing, Shanghai, and Guangzhou would have 3.9, 5.2, 4.2 million infectious cases at the peak time in the middle of June.
+- This study seeks to forecast the number of SARS-CoV-2 cases. We find, under certain assumptions, Wuhan would have 1.7 million infectious at the epidemic peak on March 3, 2020, and Beijing, Shanghai, and Guangzhou would have 3.9, 5.2, 4.2 million infectious cases at the peak time in the middle of May. Sensitivity analysis shows that reducing half of the number of catchment size and the reproductive number would reduce the magnitude of epidemic by more than 60% while lengthening the peak to June and duration of the epidemic to August.
 
 ### Background
--  There has been a novel coronavirus (2019-nCoV) pneumonia outbreak in Wuhan, China since December 2019 which spreads internationally. 
+- There has been a novel coronavirus (2019-nCoV) pneumonia outbreak in Wuhan, China since December 2019 which spreads internationally. 
 - On 2019-12-01, the first case of nCoV exhibits symptons, according to Huang's [Clinical features of patients infected with 2019 novel coronavirus in Wuhan, China](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30183-5/fulltext#seccestitle10). This date is used as the first day of the epidemic for Wuhan city.
 - On 2020-1-23, Wuhan city lockdowns [(ifeng news)](http://news.ifeng.com/c/7tpL47zV2Vy). Before Wuhan lockdown, 5 million people left the city [(Tencent News)](https://new.qq.com/sv1/qd/aoyou.html?cmsid=20200127A0EFXJ00). This date will be used as the start of the epidemic for the rest of China.
 - There is a time lag between onset of symptons and case confirmed, particularly due to staff and medical supply shortage. The median time from onset of symptoms to first hospital admission was 7 days, according to Huang's [Clinical featupracticeres of patients infected with 2019 novel coronavirus in Wuhan, China](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30183-5/fulltext#seccestitle10) (2020).
