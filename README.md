@@ -15,7 +15,7 @@
 
 ### Model 2: SEIR model
 - Purpose
-  * Forecast the SARS-CoV-2 epidemic peak size and peak time in metropolis
+  * Forecast the SARS-CoV-2 epidemic peak size and peak time in metropolis by applying a deterministic SEIR metapopulation transmission model
 - Usage
   * Download my Jupyter notebook file: [SEIR.ipynb](https://github.com/yijunwang0805/YijunWang/blob/master/SEIR%20Forecast_Yijun%20Wang%20%26%20Owen%20Xu/SEIR.ipynb).
 
