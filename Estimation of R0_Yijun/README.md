@@ -127,3 +127,5 @@ Parameter values
 4. Althaus, Christian L. (2014, June). Estimating the Reproduction Number of Ebola Virus (EBOV) During the 2014 Outbreak in West Africa. PLoS Currents. PMC 4169395. PMID 25642364.
 
 5. Gerardo Chowell, Carlos, P., et al. (2004, July). Model Parameters and Outbreak Control for SARS.
+
+1. [Doraemon](https://zhuanlan.zhihu.com/p/104091330?utm_source=wechat_session&utm_medium=social&utm_oi=1166139227388686336)'s code
