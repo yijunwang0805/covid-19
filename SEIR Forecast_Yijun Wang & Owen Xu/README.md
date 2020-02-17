@@ -110,3 +110,9 @@ Unlike transmissibility and catchment size, our estimates suggested that a 50% r
 1. Read JM, Bridgen JRE, Cummings DAT, Ho A, Jewell CP. [Novel coronavirus
 2019-nCoV: early estimation of epidemiological parameters and epidemic predictions](https://www.medrxiv.org/content/10.1101/2020.01.23.20018549v1.full.pdf).
 medRxiv. 2020:2020.01.23.20018549. doi: 10.1101/2020.01.23.20018549.
+
+1. [Doraemon](https://zhuanlan.zhihu.com/p/104091330?utm_source=wechat_session&utm_medium=social&utm_oi=1166139227388686336)'s code
+
+1. [Udacity](https://classroom.udacity.com/courses/cs222)'s code
+
+
