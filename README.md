@@ -54,6 +54,7 @@
 
 ### Model 3: Impact on Economic Growth
 - In progress
+- 现在正在想办法找高频率或跨区域的经济相关的数据，如航班，交通，货运量，酒店入住率，邮政，就业，服装，淘宝等能反应经济相关的数据
 
 
 ### Special Thanks to 
