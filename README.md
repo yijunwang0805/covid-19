@@ -1,5 +1,9 @@
 # Yijun Wang 
 # (Feb 10 - 14, 2020)
+
+### To do
+- [ ] emphaize on peak time rather than number
+
 ### Model 1: Estimation of R<sub>0</sub>
 - Purpose
   * Estimate the value of basic reproduction number
@@ -29,7 +33,7 @@
   * ```SEIR()``` is the epidemic model that describes the system of differential equations.
   * ```betaFunc()``` and ```gammaFunc()``` calculate the value of transmissibility and removal rate, respectively.
   * ```spi.odeint()``` solves the system of differential equations. Its ```inputs``` are the epidemic model ```SEIR()```, initial value of susceptible, exposed, infectious, removal ```INI```, and the number of days since the epidemic ```Time```
-  * Please note the several assumptions will limit the use of this model, for instance, assumption of consistent behaviors before and during the epidemic means that people do **not** implement social or non-pharmaceutical intervention.
+  * Please note the **several assumptions** will limit the use of this model, for instance, assumption of consistent behaviors before and during the epidemic means that people do **not** implement social or non-pharmaceutical intervention.
 - Summary
   * This study seeks to forecast the number of SARS-CoV-2 cases. We find, under certain assumptions, Wuhan would have 1.7 million infectious at the epidemic peak on March 3, 2020, and Beijing, Shanghai, and Guangzhou would have 3.9, 5.2, 4.2 million infectious cases at the peak time in the middle of May. 
   * Sensitivity analysis shows that reducing half of the number of catchment size and the reproductive number would reduce the magnitude of epidemic by more than 60% while lengthening the peak to June and duration of the epidemic to August.
