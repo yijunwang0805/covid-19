@@ -53,11 +53,13 @@
 
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; N(t) = S(t) + E(t) + I(t) + R(t)
 
-### Model 3: Impact on Economic Growth (In progress)
-- A panel approach for external shock: 
-  - exploiting the dependence among cross-sectional units to construct the counterfactuals
-- Look for data! 寻求高频率或跨区域的经济相关的数据，如航班，交通，货运量，酒店入住率，邮政，就业，服装，淘宝等能反应经济相关的数据，如您有相关数据，请联系我。只用于学术用途且标明出处。
+### Model 3: MCMC under SEIR (In progress)
+- Use Metropolis-Hastings-based Markov chain Monte Carlo (MCMC) to estimate the parameters of SEIR model
 
+### Model 4: Impact on Economic Growth (In progress)
+- A panel approach for external shock: 
+  - exploiting the dependence among cross-sectional units to construct the counterfactuals?
+- IV?
 
 ### Special Thanks to 
 - [Wuhan 2020](https://github.com/wuhan2020/nCov-2019-data-science)'s data science team
