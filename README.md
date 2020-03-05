@@ -53,8 +53,8 @@
 
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; N(t) = S(t) + E(t) + I(t) + R(t)
 
-### Model 3: MCMC under SEIR (In progress)
-- Use Metropolis-Hastings-based Markov chain Monte Carlo (MCMC) to estimate the parameters of SEIR model
+### Model 3: MCMC under spatial SEIR (In progress)
+- Use Metropolis-Hastings-based Markov chain Monte Carlo (MCMC) to estimate the parameters of the spatial SEIR model
 
 ### Model 4: Impact on Economic Growth (In progress)
 - A panel approach for external shock: 
