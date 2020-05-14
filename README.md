@@ -63,6 +63,8 @@
 
 ### Model 5: LSTM and ARIMA short-term forecasting (In progress)
 
+### Model 6: Oversea Estimation: Possibility of Recovered Back to Infectious (In progress)
+
 ### Special Thanks to 
 - [Wuhan 2020](https://github.com/wuhan2020/nCov-2019-data-science)'s data science team
 - [BlankerL](https://github.com/BlankerL/DXY-COVID-19-Crawler)'s Crawler
