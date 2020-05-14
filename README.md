@@ -32,7 +32,7 @@
   * ```spi.odeint()``` solves the system of differential equations. Its ```inputs``` are the epidemic model ```SEIR()```, initial value of susceptible, exposed, infectious, removal ```INI```, and the number of days since the epidemic ```Time```
   * Please note the **several assumptions** will limit the use of this model, for instance, assumption of consistent behaviors before and during the epidemic means that people do **not** implement social or non-pharmaceutical intervention.
 - Summary
-  * This study seeks to forecast the peak time of SARS-CoV-2 cases. We find, under the assumptions of no quaratine intervention, Wuhan reach peak infectiouson March 3, 2020; Beijing, Shanghai, and Guangzhou would each peak infectious in the middle of May. 
+  * This study seeks to forecast the peak time of SARS-CoV-2 cases. We find, under the assumptions of no quaratine intervention, Wuhan reach peak infection March 3, 2020; Beijing, Shanghai, and Guangzhou would each peak infection in the middle of May. 
   * Sensitivity analysis shows that reducing half of the number of catchment size and the reproductive number would reduce the magnitude of epidemic by more than 60%, while lengthening the peak to June and duration of the epidemic to August.
 - Model
   * A typical **SEIR** (susceptible, exposed, infectious, removed) model can be described as a system of differential equations
