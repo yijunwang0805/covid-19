@@ -1,5 +1,6 @@
 # Yijun Wang 
 # (Feb 10 - 14, 2020)
+# Herd Immunity Model
 
 ### Model 1: Estimation of R<sub>0</sub>
 - Purpose
