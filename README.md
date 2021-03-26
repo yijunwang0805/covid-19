@@ -1,4 +1,3 @@
-# Yijun Wang 
 # Jan 2020
 # Herd Immunity Model
 
